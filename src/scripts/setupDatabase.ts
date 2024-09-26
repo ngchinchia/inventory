@@ -14,7 +14,7 @@ const runSqlScript = async (filePath: string): Promise<void> => {
 };
 
 const main = async () => {
-  const sqlFilePath = path.join(__dirname, "seed_data.sql");
+  const sqlFilePath = path.join(__dirname, "insert_table.sql");
   await runSqlScript(sqlFilePath);
 };
 
